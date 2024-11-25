@@ -61,7 +61,7 @@ The interface is designed to be intuitive and responsive, making it easier to ma
 
 ## Demo
 
-[![Demo]](https://vimeo.com/1033084453/15e3f68458?share=copy)
+https://github.com/user-attachments/assets/95f715c9-0ade-4f49-bb34-2edb9df2f82e
 
 
 </div>
