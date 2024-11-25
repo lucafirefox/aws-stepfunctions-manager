@@ -40,16 +40,29 @@ The interface is designed to be intuitive and responsive, making it easier to ma
 
 </div>
 
-<br/>
+
+<div>
+
+### Key Directories
+
+- **app/**: Contains the main application source code, organized into modules for API, core logic, data models, and UI components
+  
+- **assets/**: Stores static files used by the web interface
+  - CSS files for styling
+  - Favicon files for browser icons
+  
+- **configs/**: Houses configuration files for Step Function pipelines
+  - Each YAML file defines parameters for a specific pipeline
+  - Used to specify input parameters, environment variables, and other pipeline-specific settings
+  
+</div>
 
 <div>
 
 ## Demo
 
-<video width="100%" controls>
-  <source src="docs/demo.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+[![Demo]](https://vimeo.com/1033084453/15e3f68458?share=copy)
+
 
 </div>
 
