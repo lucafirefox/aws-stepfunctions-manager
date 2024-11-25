@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stepfunctionmanager"
+version = "0.1.0"
+description = "NiceGui project to orchestrate NLP Step Functions"
+authors = ["Luca Ferrario <lucaferrario199@gmail.com>"]
+readme = "readme.md"
+
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+boto3 = "^1.35.64"
+nicegui = "^2.5.0"
+loguru = "^0.7.2"
+pytz = "^2024.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

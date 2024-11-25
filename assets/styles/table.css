@@ -1,0 +1,88 @@
+/* Status row background colors */
+.status-SUCCEEDED td { 
+    background-color: rgba(34, 197, 94, 0.1) !important; 
+}
+.status-FAILED td { 
+    background-color: rgba(239, 68, 68, 0.1) !important; 
+}
+.status-RUNNING td { 
+    background-color: rgba(59, 130, 246, 0.1) !important; 
+}
+.status-TIMED_OUT td { 
+    background-color: rgba(245, 158, 11, 0.1) !important; 
+}
+.status-ABORTED td { 
+    background-color: rgba(107, 114, 128, 0.1) !important; 
+}
+
+/* Status cell text colors and styling */
+.status-SUCCEEDED .status-cell { 
+    color: rgb(34, 197, 94) !important; 
+    font-weight: bold; 
+}
+.status-FAILED .status-cell { 
+    color: rgb(239, 68, 68) !important; 
+    font-weight: bold; 
+}
+.status-RUNNING .status-cell { 
+    color: rgb(59, 130, 246) !important; 
+    font-weight: bold; 
+}
+.status-TIMED_OUT .status-cell { 
+    color: rgb(245, 158, 11) !important; 
+    font-weight: bold; 
+}
+.status-ABORTED .status-cell { 
+    color: rgb(107, 114, 128) !important; 
+    font-weight: bold; 
+}
+
+/* Details button styling */
+.details-button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.details-button:hover {
+    background-color: #dc2626;
+}
+
+/* Action link styling */
+.action-link {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+.q-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.q-table th {
+    background-color: white !important;
+    padding: 12px;
+    font-weight: 600;
+    text-align: center !important;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.q-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.q-table tr:hover td {
+    background-color: rgba(0, 0, 0, 0.02);
+}

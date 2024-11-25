@@ -1,0 +1,40 @@
+line-length = 125
+target-version = "py312"
+exclude = [
+    "application/_deprecated/",
+    "*/tests/"
+]
+
+[lint]
+
+select = [
+    "ALL", # include all the rules, including new ones
+]
+
+ignore = [
+    #### modules
+    "ANN",
+    "D",
+    "FBT",
+    #### specific rules
+    "INP001",
+    "PD901", # general df
+    "N8", # because of pydantic fields
+    "C901",
+    "PLR0913",
+    "COM812",
+    "ISC001",
+    "ERA001", # commented-out code
+    "TRY003", # specifying long messages outside the exception class
+    "S603", # subprocess` call: check for execution of untrusted input
+    "G004", # f-strings in logs
+    "BLE001", # blind exception
+    "B019", # `functools.lru_cache` or `functools.cache` on methods can lead to memory leaks
+    "SIM117", # combine with statements
+]
+
+[format]
+
+quote-style = "double"
+docstring-code-format = true
+

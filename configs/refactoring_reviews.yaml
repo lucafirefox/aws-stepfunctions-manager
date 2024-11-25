@@ -1,0 +1,39 @@
+display_name: Refactoring Reviews
+
+environments:
+  development: arn:aws:states:AWS_REGION:ACCOUNT_ID:stateMachine:development-test
+  staging: arn:aws:states:AWS_REGION:ACCOUNT_ID:stateMachine:staging-test
+  production: arn:aws:states:AWS_REGION:ACCOUNT_ID:stateMachine:production-test
+
+parameters:
+
+  product_ids:
+    description: Product ID(s) to include. Use commas to separate multiple IDs.
+    type: string
+  
+  language:
+    description: Language to filter the sentence dataset.
+    type: select
+    default: en
+    multiple: false
+    options:
+      - en
+      - it
+
+  dialect_localization:
+    description: Whether to localize english language variations.
+    type: select
+    default: british_to_american
+    multiple: false
+    options:
+      - british_to_american
+      - american_to_british
+      - skip
+
+  fail:
+    description: Flag to indicate whether to fail the execution.
+    type: boolean
+    default: false
+
+files:
+  output_directory: refactoring_reviews/executions
